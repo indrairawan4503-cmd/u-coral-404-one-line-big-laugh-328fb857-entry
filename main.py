@@ -4,7 +4,8 @@
 Writes the chosen one-liner to /output/entry.txt first (the grader reads
 it from there), then best-effort copies it next to this script in the repo
 root. The repo is read-only in the grader sandbox, so the copy is wrapped
-in try/except and must never fail the run.
+in try/except and must never fail the run. Output is exactly LINE, no
+trailing newline added.
 """
 
 import os
